@@ -1,0 +1,50 @@
+package com.nuon.peter.demoapp.utils;
+
+import android.content.Context;
+import android.content.res.Configuration;
+import java.util.Locale;
+
+public class LocaleUtils {
+
+    public static String getCurrentAsString() {
+        return getLanguageCode(getCurrent());
+    }
+
+    public static void setCurrent(Context context, Locale locale) {
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+
+        context.getResources().updateConfiguration(config, context.getResources().getDisplayMetrics());
+    }
+
+    public static Locale getCurrent() {
+        return Locale.getDefault();
+    }
+
+    public static String getLanguageCode(Locale locale) {
+        String languageCode = locale.getLanguage();
+        if (!locale.getCountry().isEmpty()) {
+            languageCode += "-" + locale.getCountry();
+        }
+        return languageCode;
+    }
+
+    public static Locale toLocale(String languageCode) {
+        String[] language = languageCode.split("-");
+        if (language.length > 1) {
+            return new Locale(language[0], language[1]);
+        }
+        return new Locale(language[0]);
+    }
+
+    public static boolean currentLocaleIsRTL() {
+        return isRTL(toLocale(getCurrentAsString()));
+    }
+
+    public static boolean isRTL(Locale locale) {
+        final int directionality = Character.getDirectionality(locale.getDisplayName().charAt(0));
+        return directionality == Character.DIRECTIONALITY_RIGHT_TO_LEFT || directionality == Character.DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC;
+    }
+
+}

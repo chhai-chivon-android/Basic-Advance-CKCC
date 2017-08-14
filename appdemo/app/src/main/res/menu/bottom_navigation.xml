@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/group"
+      android:enabled="true"
+      android:icon="@mipmap/ic_glass"
+      android:title="Movie"
+       />
+  <item
+      android:id="@+id/seach"
+      android:enabled="true"
+      android:icon="@mipmap/ic_film"
+      android:title="Genres"
+      />
+  <item
+      android:id="@+id/profile"
+      android:enabled="true"
+      android:icon="@mipmap/ic_play_filled"
+      android:title="Film"
+       />
+
+  <item
+      android:id="@+id/social"
+      android:enabled="true"
+      android:icon="@mipmap/ic_mask"
+      android:title="Talk"
+      />
+
+</menu>

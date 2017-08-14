@@ -1,0 +1,17 @@
+package com.nuon.peter.demoapp;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+
+/**
+ * Created by manithnuon on 4/29/17.
+ */
+
+public class FragmentWithActivity extends AppCompatActivity {
+  @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.layout_fragment_with_activity);
+    getSupportFragmentManager().beginTransaction().add(R.id.fragment_frame,new TopFragment()).commit();
+  }
+}

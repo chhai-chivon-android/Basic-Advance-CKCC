@@ -1,0 +1,81 @@
+<resources>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
+
+  <style name="AppThemeMaterial" parent="AppThemeAndroid">
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/black</item>
+  </style>
+
+
+  <style name="AppThemeAndroid" parent="AppTheme.Base">
+    <item name="android:windowContentTransitions">true</item>
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowExitTransition">@android:transition/slide_right</item>
+    <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+    <item name="android:windowSharedElementExitTransition">@android:transition/fade</item>
+    <item name="android:windowSharedElementEnterTransition">@android:transition/fade</item>
+  </style>
+
+  <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowContentOverlay">@android:color/transparent</item>
+  </style>
+
+  <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+  </style>
+
+  <style name="Theme.PopcornTime" parent="Theme.Base">
+    <item name="android:windowContentTransitions">true</item>
+    <item name="android:windowActivityTransitions">true</item>
+    <!-- v21 specific customisations here -->
+    <item name="toolbarStyle">@style/Custom.Widget.Toolbar</item>
+    <item name="toolbarNavigationButtonStyle">@style/Custom.Widget.Toolbar.Button.Navigation</item>
+    <item name="actionOverflowButtonStyle">@style/Custom.Widget.ActionButton.Overflow</item>
+  </style>
+
+  <style name="Theme.PopcornTime.NavigationDrawer" parent="Theme.PopcornTime">
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
+
+  <style name="Theme.PopcornTime.TransparentStatusBar" parent="Theme.PopcornTime">
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+    <item name="android:windowTranslucentNavigation">false</item>
+  </style>
+
+  <style name="Theme.PopcornTime.Detail" parent="Theme.PopcornTime.TransparentStatusBar">
+    <item name="android:windowExitTransition">@transition/movie_detail_exit</item>
+    <item name="android:windowReenterTransition">@transition/movie_detail_exit</item>
+
+    <item name="android:windowSharedElementEnterTransition">@transition/movie_detail_shared_exit</item>
+    <item name="android:windowSharedElementExitTransition">@transition/movie_detail_shared_exit</item>
+  </style>
+
+  <style name="Theme.PopcornTime.RemoteControl" parent="Theme.PopcornTime.TransparentStatusBar">
+    <item name="android:windowExitTransition">@transition/movie_detail_exit</item>
+    <item name="android:windowReenterTransition">@transition/movie_detail_exit</item>
+
+    <item name="android:windowSharedElementEnterTransition">@transition/movie_detail_shared_exit</item>
+    <item name="android:windowSharedElementExitTransition">@transition/movie_detail_shared_exit</item>
+  </style>
+
+</resources>

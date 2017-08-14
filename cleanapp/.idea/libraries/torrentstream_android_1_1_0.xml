@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="torrentstream-android-1.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/582c44344e355d14f67f1bcacab41bc2ce7cd909/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/582c44344e355d14f67f1bcacab41bc2ce7cd909/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.sv244/torrentstream-android/1.1.0/d5fdf26a3c4c113886104669c9043031e8393624/torrentstream-android-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

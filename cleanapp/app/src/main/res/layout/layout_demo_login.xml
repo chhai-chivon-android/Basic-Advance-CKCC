@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFF"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+
+          <LinearLayout
+              android:layout_marginTop="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginBottom="10dp"
+              >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/ic_play_button"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#212121"
+                android:textSize="22sp"
+                android:layout_gravity="center_horizontal"
+                android:text="Social Music"
+                />
+
+          </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:paddingLeft="16dp"
+           android:paddingRight="16dp"
+           >
+
+         <ImageView
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             app:srcCompat="@drawable/ic_person_black_24dp"
+
+             />
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             >
+
+           <EditText
+               android:id="@+id/username"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textEmailAddress"
+               android:hint="Username"/>
+
+         </android.support.design.widget.TextInputLayout>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            >
+
+          <ImageView
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              app:srcCompat="@drawable/ic_https_black_24dp"
+
+              />
+
+          <android.support.design.widget.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              >
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"/>
+
+          </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:text="Remember me"
+                />
+
+          </LinearLayout>
+
+          <TextView
+              android:gravity="center"
+              android:paddingRight="16dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="14sp"
+              android:layout_gravity="center_vertical"
+              android:text="Forgot your password?"
+              />
+
+        </RelativeLayout>
+        <!--<Button
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:text="SIGN IN"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_purple"
+            />-->
+        <TextView
+            android:id="@+id/sign_btn"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:background="@drawable/btn_purple"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or use your social network"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+          <ImageView
+              android:layout_marginTop="3dp"
+              android:layout_width="46dp"
+              android:layout_height="46dp"
+              android:src="@mipmap/facebook"
+              android:padding="4dp"
+              />
+
+          <ImageView
+              android:layout_marginLeft="8dp"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:src="@mipmap/twitter"
+              android:padding="4dp"
+              android:id="@+id/imageView2"
+              />
+
+          <ImageView
+              android:layout_marginLeft="8dp"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:src="@mipmap/linkedin"
+              android:padding="4dp"
+              />
+
+          <ImageView
+              android:layout_marginLeft="8dp"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:src="@mipmap/google"
+              android:padding="4dp"
+              />
+
+          <ImageView
+              android:layout_marginLeft="8dp"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:src="@mipmap/instagram"
+              android:padding="4dp"
+              />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your account"
+            />
+
+      </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

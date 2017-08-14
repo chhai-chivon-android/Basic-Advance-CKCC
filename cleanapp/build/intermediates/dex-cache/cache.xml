@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\chhaichivon\Coding\Android\Java\Project-Learning\cleanapp\app\libs\juniversalchardet-1.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="591d72211acc0b909b79c840e0b3ed9a0982d807">
+        <dex dex="D:\chhaichivon\Coding\Android\Java\Project-Learning\cleanapp\app\build\intermediates\transforms\dex\debug\folders\1000\2\juniversalchardet-1.0.3_ca7b001b2cf60530783a9063f96ad55ec75b753e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\chhaichivon\Coding\Android\Java\Project-Learning\cleanapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2cc19c03e03e32cb325c98f5f829315f8e612377">
+        <dex dex="D:\chhaichivon\Coding\Android\Java\Project-Learning\cleanapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_73b36369fd2f80b988ae0e479167a16174fdfc8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\chhaichivon\Coding\Android\Java\Project-Learning\cleanapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\chhaichivon\Coding\Android\Java\Project-Learning\cleanapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_aea32fe677c54d8ee524651d468fda715f3fa9a3\classes.dex" />
+    </item>
+
+</items>

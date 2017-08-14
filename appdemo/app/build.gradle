@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion "25.0.3"
+  defaultConfig {
+    applicationId "com.nuon.peter.demoapp"
+    minSdkVersion 16
+    targetSdkVersion 25
+    multiDexEnabled = true
+    versionCode 1
+    versionName "1.0"
+    vectorDrawables.useSupportLibrary = true
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    renderscriptTargetApi 18
+    renderscriptSupportModeEnabled true
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+  packagingOptions {
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/LICENSE-FIREBASE.txt'
+    exclude 'META-INF/NOTICE'
+  }
+  lintOptions {
+    abortOnError false
+  }
+
+  dataBinding {
+    enabled = true
+  }
+
+}
+
+ext{
+  libSupportVersion = '25.3.1'
+}
+
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  //noinspection GradleCompatible
+  compile "com.android.support:design:${libSupportVersion}"
+  compile "com.android.support:appcompat-v7:${libSupportVersion}"
+  compile "com.android.support:cardview-v7:${libSupportVersion}"
+  compile "com.android.support:recyclerview-v7:${libSupportVersion}"
+  compile 'com.jakewharton:butterknife:8.5.1'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+  compile 'com.github.rubensousa:gravitysnaphelper:1.1'
+  compile 'com.github.pwittchen:prefser:2.0.5'
+
+  compile 'com.github.bumptech.glide:glide:3.8.0'
+  compile 'com.squareup.picasso:picasso:2.5.2'
+
+  compile 'com.squareup.retrofit2:retrofit:2.3.0'
+  compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+  compile 'jp.wasabeef:glide-transformations:2.0.1'
+  compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+  compile 'me.zhanghai.android.materialratingbar:library:1.0.2'
+
+  //compile 'com.google.firebase:firebase-core:11.0.1' // Firebase core for analytics
+
+  compile 'com.google.firebase:firebase-database:11.0.1' // Firebase database
+
+  //compile 'com.google.firebase:firebase-storage:11.0.1'  // Firebase storage
+
+  compile 'com.google.firebase:firebase-auth:11.0.1' // Firebase Authentication
+
+  compile 'com.firebaseui:firebase-ui:2.0.1' // Firebase UI
+
+  compile 'com.google.android.gms:play-services-auth:11.0.1' // Google Sign In SDK (Google Sign In)
+
+  //compile 'com.facebook.android:facebook-android-sdk:4.23.0' // Facebook Android SDK (for Facebook Login)
+  compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+  compile 'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+
+
+  /*compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+  compile 'com.android.support:support-v4:25.3.1'
+  annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'*/
+}
+apply plugin: 'com.google.gms.google-services'

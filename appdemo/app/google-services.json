@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "950572551542",
+    "firebase_url": "https://appmovie-40892.firebaseio.com",
+    "project_id": "appmovie-40892",
+    "storage_bucket": "appmovie-40892.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950572551542:android:06ef1a8b9ea99e62",
+        "android_client_info": {
+          "package_name": "com.nuon.peter.demoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950572551542-38ff6vid3tr2hnnt7j9aqf4ma28rtpic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nuon.peter.demoapp",
+            "certificate_hash": "22ae69e4908a86b5aa48aa28e3971dc4e70b2c29"
+          }
+        },
+        {
+          "client_id": "950572551542-9c72cd8oq49ic0qo2m1sprdhgjd8ihvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxnhobh4YXQ-aYpUYvCrPYFOO4KcK7m0s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950572551542-9c72cd8oq49ic0qo2m1sprdhgjd8ihvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
